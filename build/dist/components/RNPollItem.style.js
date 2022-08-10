@@ -2,15 +2,16 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports._animatedViewStyle = exports._container = void 0;
 const react_native_1 = require("react-native");
+const { Colors } = require("../../../../../src/theme/colors");
 exports._container = (borderColor, borderWidth) => ({
     flex: 1,
-    borderWidth,
-    borderColor,
+    borderWidth:1,
+    borderColor:Colors.skyBlue,
     opacity: 1,
     marginTop: 10,
-    borderRadius: 12,
+    borderRadius: 8,
     overflow: "hidden",
-    paddingVertical: 16,
+    paddingVertical: 8,
     alignItems: "center",
     flexDirection: "row",
     justifyContent: "space-between",
